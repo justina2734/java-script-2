@@ -10,11 +10,11 @@ function gameStart(event){
     const number = Math.round(Math.random()*numberRange.value);
     compare.innerText=`You choose : ${chooseNumber.value}, the machine choose : ${number}`;
     if(String(chooseNumber.value)=== String(number)){
-        result.innerText=`You won!`;
+        result.innerHTML =`You won!`;
         compare.appendChild(result);
         document.body.appendChild(compare);
     } else {
-        result.innerText = `You lost!`;
+        result.innerHTML = `You lost!`;
         compare.appendChild(result);
         document.body.appendChild(compare);
     }
