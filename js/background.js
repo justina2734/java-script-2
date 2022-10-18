@@ -1,4 +1,4 @@
-const images = [
+let images = [
     "0.jpeg",
     "1.jpeg",
     "2.jpeg",
@@ -11,6 +11,10 @@ const images = [
 ]
 
 const chosenImg = images[Math.floor(Math.random()*images.length)];
+
+const paintImage = (imgNumber) => {
+    const backgroundImage = "js-img/"
+}
 
 const bgImg = document.createElement("img");
 bgImg.src=`js-img/${chosenImg}`;
