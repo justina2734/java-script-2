@@ -1,6 +1,38 @@
+@import "variables.css";
+
 body{
-    background-size: cover;
+   /*display: flex;*/
+   background-color: honeydew;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .hidden{
     display: none;
+}
+.bgImg{
+    animation: fadeIn 0.5s linear;
+}
+
+
+input:focus{outline:none;}
+
+
+#weather{
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#todo-form input{
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    border-bottom: var(--main-border);
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-in-out;
 }

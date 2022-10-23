@@ -14,8 +14,6 @@ function onLoginSubmit(event){
     paintGreetings();
 }
 
-
-
 loginForm.addEventListener("submit",onLoginSubmit);
 
 function paintGreetings(){
